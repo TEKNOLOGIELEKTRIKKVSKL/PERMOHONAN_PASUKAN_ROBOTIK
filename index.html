@@ -31,7 +31,7 @@ button{background:linear-gradient(115deg,#00a7b9,#0d746e);color:#f1ffff;border:1
 const PARAMS=new URLSearchParams(window.location.search);
 const PAGE=PARAMS.get('page')||'pelajar', GTOKEN=PARAMS.get('token')||'';
 // Set to your deployed Cloudflare Worker URL (no trailing slash).
-const API_URL='https://REPLACE-WITH-YOUR-WORKER.workers.dev';
+const API_URL='robotik-kvskl-api.arifomar1101.workers.dev';
 // Portal penjaga ditentukan juga daripada URL sebagai sandaran sekiranya template lama dicache.
 const ACTIVE_PAGE=(PAGE==='penjaga'||PARAMS.get('page')==='penjaga')?'penjaga':((PAGE==='admin'||PARAMS.get('page')==='admin')?'admin':'pelajar');
 const ACTIVE_GTOKEN=GTOKEN||PARAMS.get('token')||'';
